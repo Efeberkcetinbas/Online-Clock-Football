@@ -18,6 +18,11 @@ public class ClockManager : MonoBehaviour
     void Start()
     {
         clock_is_Starting = true;
+
+        if (instance == null)
+        {
+            instance = this;
+        }
     }
 
     void Update()
